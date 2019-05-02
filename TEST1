@@ -2,12 +2,12 @@ import datetime as dt
 import matplotlib.pyplot as plt
 from matplotlib import style
 import pandas as pd
-import pandas_datareader.data as pdr
+import pandas_datareader.data as 
 
 style.use('ggplot')
 
 start = dt.datetime(2018, 1, 1)
 end = dt.datetime.now(2019, 1, 1)
 
-N225 = pdr.DataReader("NIKKEI225", 'fred',start,end) 
+N225 = pdr.DataReader("NIKKEI225",start,end) 
 N225.head(1)
